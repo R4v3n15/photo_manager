@@ -42,7 +42,7 @@ class UploadModel
      * @return [boolean] [description]
      */
     public static function photoReceiver($filename, $filedata){
-        //->Target Directory to Store the Photos
+        //-> Target Directory to Store the Photos
         $targetDir = Config::get('PATH_GUEST_PHOTO') . 'guest_folder/';
         file_put_contents(
             $targetDir.$filename, 
